@@ -1,0 +1,60 @@
+<html>
+<head><title>Registeration</title>
+<script>
+function check()
+{
+var password=document.forms["myform"]["password"].value;
+	{if(password.length > 6)
+		{alert("Succesfully registered");
+		var username=document.forms["myform"]["username"].value;
+		document.write("<center>"+"Welcome"+"<br>"+username);}
+	else
+		alert("enter password as minimum 6 character");
+		}
+}
+</script>
+<style>
+span{
+color:red;
+}
+</style>
+</head>
+<body background="img/m.jpg">
+<center>
+<pre>
+
+
+
+
+
+
+</pre>
+<h1>Registeration </h1>
+<form name="myform"  onsubmit="check()"  method="get">
+<span>*</span>First Name: <input type="text" name="name"  required><br><br>
+<span>*</span>Last Name: <input type="text" name="name"  required><br><br>
+<span>*</span>Username:<input type="text" name="username"  required><br><br>
+<span>*</span>Password:<input type="password" name="password"  required><br><br>
+<span>*</span>Confirm Password:<input type="password" name="cpassword"  required><br><br>
+<span>*</span>Phone:<input type="text" name="name"  required><br><br>
+Gender:<input type="radio" name="gen" value="male">Male<input type="radio" name="gen" value="female">Female</p>
+Address: <input type="text" name="address">
+<span>*</span>DoorNo: <input type="text" name="name"  required><br><br>
+<span>*</span>street: <input type="text" name="name"  required>&emsp;
+<span>*</span>City: <input type="text" name="name"  required><br><br>
+<span>*</span>State: <input type="text" name="name"  required>&emsp;
+<span>*</span>Zipcode: <input type="text" name="name"  required><br><br>
+Country:<select name="country" required>
+<option selected>Select Country</option>
+<option name="country" value="India">India</option>
+<option name="country" value="kuwait">Kuwait</option> 
+<option name="country" value="Canada">Canada</option>
+<option name="country" value="saudi">Saudi</option>
+</select><br><br>
+Language Known:<input type="checkbox" name="lang" value="English">English&emsp;<input type="checkbox" name="lang" value="Tamil">Tamil &emsp;<input type="checkbox" name="lang" value="Hindi">Hindi&emsp;<input type="checkbox" name="lang" value="Malayalam">Malayalam<br>
+<br><br>
+<p align="center"><input type="checkbox" name="agree" required>I Agree The Terms & Conditions</p>
+<input type="submit" value="Create Account" >&emsp;&emsp;<button type="reset" value="cancel">Cancel</button>
+</form>
+</body>
+</html>
